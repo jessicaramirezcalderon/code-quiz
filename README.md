@@ -11,7 +11,7 @@ Single responsive page containing the quiz
 
 ![Demo](CQdemo.png)
 
-## Pages
+## ToDos
 Refactor CSS and JS documents
 
 ## Contributing
