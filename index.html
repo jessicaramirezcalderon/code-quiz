@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Code Quiz</h1>
+
+    <main>
+        <div id="quiz-container">
+            <div class="start-container">
+                <button type="button" class="btn btn-outline-primary" id="start">START</button>
+                <div id="seconds">180 Seconds</div>
+            </div>
+            <div id="q-set">
+                <p id="question">Question Goes Here</p>
+                <ol id="answer-list">
+                    <li id="answer0">Answer</li>
+                    <li id="answer1">Answer</li>
+                    <li id="answer2">Answer</li>
+                    <li id="answer3">Answer</li>
+                </ol>
+                <p id="question-checker"></p>
+            </div>
+        </div>
+
+        <!--to be shown at the emd-->
+
+        <div id="results">
+            <h1>Enter your Name to get your results</h1>
+
+            <!--This holds the score results-->
+            <div class="input-group">
+                <span class="input-group-text" id="enter-initials">Name</span>
+                <input type="text" aria-label="Initials" class="form-control" id="initials-input">
+                <button id="submit-init" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+        <!--Restart quiz-->
+        <div id="restart">
+            <h1 id="final-score"></h1>
+            <button type="button" class="btn btn-outline-primary" id="restart-quiz">Restart the quiz</button>
+
+        </div>
+
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

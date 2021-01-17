@@ -1,0 +1,61 @@
+body {
+    padding: 15px;
+}
+
+
+main {
+    width: 50%;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    padding: 5px;
+    margin: 2px auto;
+    border-radius: 3px;
+    transition: transform .2s;
+    width: 50%;
+}
+
+#enter-initials, .btn, li {
+    background-color: powderblue;
+}
+
+#question, #restart {
+    text-align: center;
+}
+
+.start-container {
+ text-align: center;
+ margin: 20px 0 40px;
+}
+
+.btn {
+    border: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #407E84;
+}
+
+li:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+#restart, #results, #q-set {
+    display: none;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 600px) {
+   main {
+    width: 90%;
+    margin: 10px auto;
+    }
+}
